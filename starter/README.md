@@ -30,6 +30,14 @@ To get started developing right away:
     │   ├── add.svg
     │   ├── arrow-back.svg
     │   └── arrow-drop-down.svg
+    │   componenets # folder which Contains all the componenets
+    │   ├── BookList # contains BookList componenet and Shelf componenet (main view)
+        │    ├── BookList.js # render all shelfs and books belonging to each shelf
+    │   │    └── Shelf.js # main view shelves
+    │   ├── SearchBooks # render search page where we can add books to main view
+        │    └── SearchBooks.js # component where we fetch searched books and use it to add books to main view shelves
+    │   └── Book # contains book component which we render in both main view and search
+            └── Book.js # componenet where we render each book and change the shelf of the book
     ├── index.css # Global styles. You probably won't need to change anything here.
     └── index.js # You should not need to modify this file. It is used for DOM rendering only.
 ```
